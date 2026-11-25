@@ -1,0 +1,928 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <meta name="description" content="Laundry pickup &amp; delivery for hotels, Airbnb hosts, vacation rentals, and hospitality businesses in Kansas City. Towels, sheets, and linens cleaned fast with reliable recurring service." />
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TJVSL9NR');</script>
+    <!-- End Google Tag Manager -->
+    <title>Hospitality Laundry Service Kansas City \| Nanny’s Laundry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --teal: #2FA8C4;
+        --teal-dark: #1E7E99;
+        --navy: #1B3578;
+        --deep-navy: #12275E;
+        --aqua: #A9DEEE;
+        --aqua-soft: #EAF6FB;
+        --coral: #F06A77;
+        --coral-dark: #D94F5E;
+        --ink: #1C2B3A;
+        --muted: #46586A;
+        --page: #FFFFFF;
+        --line: #D9E9F1;
+        --card: #FFFFFF;
+        --shadow: 0 18px 40px rgba(18, 39, 94, 0.16);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --ink: #EDF5FA;
+          --muted: #B9CCDA;
+          --page: #0C1B3D;
+          --aqua-soft: #16305F;
+          --line: #2A4470;
+          --card: #14294F;
+          --shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+        }
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--ink);
+        background: var(--page);
+        -webkit-font-smoothing: antialiased;
+      }
+      h1, h2, h3 { font-family: "Poppins", "Segoe UI", sans-serif; margin: 0; line-height: 1.2; }
+      p { margin: 0; }
+      img { display: block; max-width: 100%; }
+      a { color: var(--navy); }
+      @media (prefers-color-scheme: dark) { a { color: var(--aqua); } }
+
+      .container { max-width: 1120px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
+      .site-header .container { max-width: 1400px; }
+
+      /* ---------- Header ---------- */
+      .site-header {
+        position: sticky; top: 0; z-index: 50;
+        background: var(--page);
+        border-bottom: 3px solid var(--aqua);
+      }
+      .header-inner {
+        display: flex; align-items: center; gap: 20px;
+        padding-top: 10px; padding-bottom: 10px;
+      }
+      .brand { flex: 0 0 auto; display: inline-flex; align-items: center; min-height: 44px; }
+      .brand img { height: 58px; width: auto; }
+      .main-nav { margin-left: auto; }
+      .main-nav ul {
+        display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 2px 4px;
+        list-style: none; margin: 0; padding: 0;
+      }
+      .main-nav a {
+        display: inline-flex; align-items: center; min-height: 44px;
+        padding: 6px 7px; border-radius: 8px;
+        font-family: "Poppins", sans-serif; font-weight: 600; font-size: 13.5px;
+        color: var(--ink); text-decoration: none; white-space: nowrap;
+      }
+      .main-nav a:hover { color: var(--teal-dark); background: var(--aqua-soft); }
+      .main-nav a[aria-current="page"] { color: var(--navy); box-shadow: inset 0 -3px 0 var(--coral); border-radius: 8px 8px 0 0; }
+      @media (prefers-color-scheme: dark) { .main-nav a[aria-current="page"] { color: #fff; } }
+      .header-phone {
+        display: inline-flex; align-items: center; gap: 8px; min-height: 44px;
+        font-family: "Poppins", sans-serif; font-weight: 700; font-size: 16px;
+        color: var(--navy); text-decoration: none; white-space: nowrap;
+      }
+      @media (prefers-color-scheme: dark) { .header-phone { color: var(--aqua); } }
+      .header-phone svg { flex: 0 0 auto; }
+      .btn {
+        display: inline-flex; align-items: center; justify-content: center;
+        min-height: 48px; padding: 12px 22px; border: 0; border-radius: 999px;
+        font-family: "Poppins", sans-serif; font-weight: 700; font-size: 15px;
+        text-decoration: none; cursor: pointer; text-align: center;
+        transition: background 0.15s ease, transform 0.15s ease;
+      }
+      /* Primary CTA system (class name kept from earlier builds): navy fill
+         with a white label on light surfaces. Coral is accent-only now. */
+      .btn-coral { background: var(--navy); color: #fff; box-shadow: 0 8px 20px rgba(27, 53, 120, 0.28); }
+      .btn-coral:hover { background: var(--deep-navy); }
+      /* On the navy hero the primary inverts: white fill, navy label —
+         never navy-on-navy, never a coral fill. */
+      .hero .btn-coral { background: #fff; color: var(--navy); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22); }
+      .hero .btn-coral:hover { background: var(--aqua); color: var(--deep-navy); }
+      .btn-schedule { flex: 0 0 auto; }
+      .menu-btn {
+        display: none; align-items: center; justify-content: center;
+        width: 48px; height: 48px; margin-left: auto; padding: 0;
+        background: transparent; border: 0; border-radius: 0; cursor: pointer;
+        color: var(--ink); -webkit-tap-highlight-color: transparent;
+      }
+      .menu-btn:focus-visible { outline: 2px solid var(--teal-dark); outline-offset: 2px; }
+      .brand .brand-badge { display: none; }
+
+      /* ---------- Hero ---------- */
+      .hero {
+        position: relative; overflow: hidden;
+        background: linear-gradient(135deg, var(--deep-navy) 0%, var(--navy) 62%, #1D4E89 100%);
+        color: #fff;
+      }
+      .hero-bubbles { position: absolute; inset: 0; pointer-events: none; }
+      .hero-wave { position: absolute; left: 0; right: 0; bottom: -2px; width: 100%; height: 74px; pointer-events: none; }
+      .hero-inner {
+        position: relative;
+        display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 52px; align-items: center;
+        padding-top: 72px; padding-bottom: 104px;
+      }
+      .hero h1 { font-size: 46px; font-weight: 800; letter-spacing: -0.5px; }
+      .hero h1 .accent { color: var(--aqua); }
+      .hero-lede { margin-top: 18px; font-size: 18px; line-height: 1.65; color: #DCEEF7; max-width: 34em; }
+      .buy-grid {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+        margin-top: 32px; max-width: 520px;
+      }
+      /* Buy buttons — one treatment on every gift page: brand navy #1B3578
+         with bold white text, tall and wide, lifted with a strong soft
+         shadow. Labels are plain uniform text — one font, one size, one
+         weight throughout. Identical within each page; only the
+         amount/label differs. */
+      .buy-btn {
+        min-height: 68px; padding: 18px 22px;
+        background: var(--navy); color: #fff;
+        font-family: "Poppins", sans-serif;
+        font-size: 17px; font-weight: 700; border-radius: 14px;
+        box-shadow: 0 6px 14px rgba(27, 53, 120, 0.18);
+      }
+      .buy-btn:hover {
+        background: var(--deep-navy);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 18px rgba(27, 53, 120, 0.2);
+      }
+      /* The buy buttons sit on a pale aqua card so the navy buttons contrast
+         hard against what is behind them — the navy hero on both gift pages,
+         and the tinted section on Daisy's Dane. */
+      #giftPage .buy-grid, #ddsPage .buy-grid {
+        background: #F4FBFE; border: 1px solid rgba(169, 222, 238, 0.65); border-radius: 20px; padding: 18px;
+        box-shadow: 0 10px 24px rgba(18, 39, 94, 0.1);
+      }
+      .hero-note { margin-top: 20px; font-size: 15px; line-height: 1.6; color: #BFDDF0; max-width: 36em; }
+      .hero-sub { margin-top: 14px; font-family: "Poppins", sans-serif; font-weight: 600; font-size: 17px; line-height: 1.55; color: var(--aqua); max-width: 34em; }
+      .hero h1 a { color: inherit; text-decoration: underline; text-decoration-color: var(--teal); text-underline-offset: 5px; }
+      .hero h1 a:hover { color: var(--aqua); }
+      .hero-photo { position: relative; }
+      .hero-photo img.main {
+        width: 100%; aspect-ratio: 1 / 1; object-fit: cover;
+        border-radius: 24px; border: 6px solid rgba(169, 222, 238, 0.35);
+        box-shadow: var(--shadow);
+      }
+      .hero-photo .badge-chip {
+        position: absolute; left: -22px; bottom: 26px;
+        width: 108px; height: 108px; border-radius: 50%;
+        background: #fff; padding: 7px;
+        box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
+      }
+      .hero-photo .badge-chip img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+
+      /* ---------- Sections ---------- */
+      section.block { padding: 76px 0; }
+      section.block.tint { background: var(--aqua-soft); }
+      .section-title { font-size: 32px; font-weight: 700; color: var(--navy); letter-spacing: -0.3px; }
+      @media (prefers-color-scheme: dark) { .section-title { color: #fff; } }
+
+      /* Intro */
+      .intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+      .intro-grid .section-title { font-size: 36px; }
+      .intro-copy { margin-top: 18px; font-size: 17px; line-height: 1.7; color: var(--muted); max-width: 36em; }
+      .intro-visual { position: relative; padding-bottom: 64px; }
+      .intro-visual .towels {
+        width: 100%; aspect-ratio: 3 / 2; object-fit: cover;
+        border-radius: 20px; box-shadow: var(--shadow);
+      }
+      .gift-card {
+        position: absolute; left: 24px; bottom: 0;
+        width: min(340px, calc(100% - 48px)); aspect-ratio: 8 / 5;
+        border-radius: 16px; overflow: hidden;
+        background: linear-gradient(130deg, var(--navy) 0%, var(--deep-navy) 70%);
+        box-shadow: 0 20px 38px rgba(18, 39, 94, 0.4);
+        color: #fff; padding: 18px 20px;
+        display: flex; flex-direction: column; justify-content: space-between;
+      }
+      .gift-card .gc-top { display: flex; align-items: center; gap: 12px; }
+      .gift-card .gc-badge { width: 52px; height: 52px; border-radius: 50%; background: #fff; padding: 3px; flex: 0 0 auto; }
+      .gift-card .gc-badge img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+      .gift-card .gc-name { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 16px; line-height: 1.25; }
+      .gift-card .gc-label {
+        font-family: "Poppins", sans-serif; font-weight: 800; font-size: 26px;
+        letter-spacing: 3px; color: var(--aqua);
+      }
+      .gift-card .gc-wave { position: absolute; right: -30px; bottom: -34px; opacity: 0.5; }
+
+      /* Steps */
+      .steps-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 36px; }
+      .step-card {
+        background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+        padding: 26px 26px 28px; display: flex; gap: 18px; align-items: flex-start;
+        box-shadow: 0 8px 22px rgba(18, 39, 94, 0.06);
+      }
+      .step-num {
+        flex: 0 0 auto; width: 46px; height: 46px; border-radius: 50%;
+        display: flex; align-items: center; justify-content: center;
+        background: var(--teal); color: var(--deep-navy);
+        font-family: "Poppins", sans-serif; font-weight: 800; font-size: 20px;
+      }
+      .step-card:nth-child(2) .step-num { background: var(--coral); color: var(--deep-navy); }
+      .step-card:nth-child(3) .step-num { background: var(--navy); color: #fff; }
+      .step-card:nth-child(4) .step-num { background: var(--teal-dark); color: #fff; }
+      .step-card p { font-size: 16px; line-height: 1.65; color: var(--muted); padding-top: 8px; }
+      .step-card p strong { color: var(--ink); font-weight: 600; }
+
+      /* Terms */
+      .terms-panel {
+        margin-top: 28px; background: var(--aqua-soft);
+        border: 1px solid var(--line); border-left: 6px solid var(--teal);
+        border-radius: 14px; padding: 28px 32px;
+      }
+      .terms-panel ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+      .terms-panel li { display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.6; }
+      .terms-panel li svg { flex: 0 0 auto; margin-top: 3px; }
+
+      /* FAQ */
+      .faq-list { margin-top: 12px; }
+      .faq-item { padding: 26px 4px; border-bottom: 1px solid var(--line); }
+      .faq-item:first-child { padding-top: 14px; }
+      .faq-item h3 { font-size: 19px; font-weight: 600; color: var(--navy); display: flex; gap: 12px; align-items: flex-start; }
+      @media (prefers-color-scheme: dark) { .faq-item h3 { color: #fff; } }
+      .faq-item h3 .q-dot {
+        flex: 0 0 auto; width: 10px; height: 10px; border-radius: 50%;
+        background: var(--coral); margin-top: 9px;
+      }
+      .faq-item p { margin-top: 10px; color: var(--muted); line-height: 1.7; max-width: 62em; }
+
+      /* ---------- Footer ---------- */
+      .site-footer { background: var(--deep-navy); color: #DCEEF7; position: relative; overflow: hidden; }
+      .footer-inner {
+        display: grid; grid-template-columns: minmax(260px, 380px) 1fr; gap: 40px 56px; align-items: start;
+        padding-top: 48px; padding-bottom: 48px; position: relative;
+      }
+      .footer-brand { display: flex; gap: 20px; align-items: flex-start; }
+      .footer-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 36px; max-width: 560px; }
+      .footer-badge { width: 118px; height: 118px; border-radius: 50%; background: #fff; padding: 6px; }
+      .footer-badge img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+      .footer-name { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 21px; color: #fff; line-height: 1.3; }
+      .footer-contact { margin-top: 10px; display: grid; gap: 4px; font-size: 15.5px; }
+      .footer-contact a { color: var(--aqua); text-decoration: none; }
+      .footer-contact a:hover { text-decoration: underline; }
+      .footer-links { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+      .footer-links a {
+        display: inline-flex; align-items: center; min-height: 40px; padding: 4px 6px;
+        color: #DCEEF7; text-decoration: none; font-family: "Poppins", sans-serif; font-weight: 600; font-size: 15px;
+      }
+      .footer-links a:hover { color: var(--aqua); }
+
+      /* ---------- Price guide ---------- */
+      .sr-only {
+        position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+        overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+      }
+      .pg-h1 { font-size: 40px; }
+      .pg-photo img.main { aspect-ratio: 3 / 2; }
+      .prose p { margin-top: 16px; font-size: 16.5px; line-height: 1.7; color: var(--muted); max-width: 68em; }
+      .prose p:first-child { margin-top: 0; }
+      .prose p strong { color: var(--ink); }
+      .prose a { font-weight: 600; }
+      .sub-title { font-size: 23px; font-weight: 700; color: var(--navy); margin-top: 48px; letter-spacing: -0.2px; }
+      @media (prefers-color-scheme: dark) { .sub-title { color: #fff; } }
+      .dot-list { list-style: none; margin: 20px 0 0; padding: 0; display: grid; gap: 12px; max-width: 68em; }
+      .dot-list li { display: flex; gap: 12px; align-items: flex-start; font-size: 16.5px; line-height: 1.65; color: var(--muted); }
+      .dot-list li::before {
+        content: ""; flex: 0 0 auto; width: 9px; height: 9px; border-radius: 50%;
+        background: var(--teal); margin-top: 9px;
+      }
+      .dot-list li strong { color: var(--ink); }
+      .table-scroll {
+        margin-top: 22px; overflow-x: auto; -webkit-overflow-scrolling: touch;
+        border: 1px solid var(--line); border-radius: 14px; background: var(--card);
+        box-shadow: 0 8px 22px rgba(18, 39, 94, 0.06);
+      }
+      table.pg-table { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.55; }
+      table.pg-table th {
+        background: var(--navy); color: #fff; text-align: left;
+        font-family: "Poppins", sans-serif; font-weight: 600; font-size: 14.5px;
+        padding: 13px 16px; vertical-align: top;
+      }
+      table.pg-table td { padding: 12px 16px; border-top: 1px solid var(--line); vertical-align: top; color: var(--muted); }
+      table.pg-table td strong, table.pg-table th strong { color: inherit; }
+      table.pg-table tbody tr:nth-child(even) { background: var(--aqua-soft); }
+      table.pg-table tr.hl td { background: var(--aqua); color: var(--deep-navy); font-weight: 600; }
+      table.pg-table td.rowhead { font-weight: 600; color: var(--ink); }
+      table.w-prices { min-width: 540px; }
+      table.w-worked { min-width: 560px; }
+      table.w-annual { min-width: 660px; }
+      table.w-local { min-width: 720px; }
+      table.w-vs { min-width: 600px; }
+      .sources-note { margin-top: 14px; font-size: 13.5px; line-height: 1.65; color: var(--muted); max-width: 76em; overflow-wrap: break-word; }
+      .note-block {
+        margin-top: 16px; background: var(--aqua-soft);
+        border: 1px solid var(--line); border-radius: 12px; padding: 18px 22px;
+      }
+      .note-block p { font-size: 15.5px; line-height: 1.7; color: var(--muted); max-width: 72em; }
+      .note-block p strong { color: var(--ink); }
+      .notes-stack { margin-top: 26px; display: grid; gap: 0; }
+      .duo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+      .duo-panel {
+        background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+        padding: 28px 28px 30px; box-shadow: 0 8px 22px rgba(18, 39, 94, 0.06);
+      }
+      .duo-panel .dot-list { margin-top: 16px; }
+      .book-actions { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+      @media (max-width: 880px) {
+        .pg-h1 { font-size: 32px; }
+        .duo-grid { grid-template-columns: 1fr; }
+        .sub-title { font-size: 21px; margin-top: 38px; }
+        /* Tables become stacked cards on small screens — nothing scrolls sideways.
+           The wrapper loses its scroll/border styling, the table's min-width is
+           removed, and each row renders as one card: first cell as the card
+           title, every other cell labelled from its column header. */
+        .table-scroll {
+          overflow-x: visible; border: 0; border-radius: 0;
+          box-shadow: none; background: transparent;
+        }
+        table.pg-table { min-width: 0; font-size: 15.5px; }
+        table.pg-table, table.pg-table tbody, table.pg-table tr, table.pg-table td { display: block; width: 100%; }
+        table.pg-table thead { display: none; }
+        table.pg-table tbody tr {
+          border: 1px solid var(--line); border-radius: 14px; background: var(--card);
+          box-shadow: 0 8px 22px rgba(18, 39, 94, 0.06);
+          padding: 4px 18px 8px; margin-bottom: 14px;
+        }
+        table.pg-table tbody tr:nth-child(even) { background: var(--card); }
+        table.pg-table tr.hl { background: var(--aqua); }
+        table.pg-table tr.hl td { background: transparent; }
+        table.pg-table td { border-top: 1px solid var(--line); padding: 10px 0; overflow-wrap: break-word; }
+        table.pg-table td:first-child {
+          border-top: 0; padding-top: 12px;
+          font-family: "Poppins", sans-serif; font-weight: 700; font-size: 16.5px; color: var(--navy);
+        }
+        @media (prefers-color-scheme: dark) { table.pg-table td:first-child { color: #fff; } }
+        table.pg-table td[data-label]::before {
+          content: attr(data-label);
+          display: block; margin-bottom: 2px;
+          font-family: "Poppins", sans-serif; font-weight: 600; font-size: 12.5px;
+          letter-spacing: 0.4px; text-transform: uppercase; color: var(--teal-dark);
+        }
+        table.pg-table tr.hl td[data-label]::before { color: var(--deep-navy); }
+      }
+
+      /* ---------- Home / Pricing / Wash & Fold components ---------- */
+      .hero-actions { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+      .hero-checks { list-style: none; margin: 26px 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 22px; max-width: 560px; }
+      .hero-checks li { display: flex; gap: 10px; align-items: flex-start; font-size: 15.5px; line-height: 1.5; color: #DCEEF7; }
+      .hero-checks li svg { flex: 0 0 auto; margin-top: 2px; }
+      .app-note { margin-top: 18px; font-size: 15px; line-height: 1.6; color: #BFDDF0; max-width: 36em; }
+      .price-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 40px; }
+      .price-card {
+        position: relative; background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+        padding: 30px 26px; box-shadow: 0 8px 22px rgba(18, 39, 94, 0.06);
+        display: flex; flex-direction: column;
+      }
+      .price-card.popular { border: 2px solid var(--teal); }
+      .pop-badge {
+        position: absolute; top: -14px; left: 26px; background: var(--aqua); color: var(--deep-navy);
+        font-family: "Poppins", sans-serif; font-weight: 700; font-size: 12.5px; letter-spacing: 0.4px;
+        padding: 5px 12px; border-radius: 999px;
+      }
+      .price-card h3 { font-size: 19px; font-weight: 700; color: var(--navy); }
+      @media (prefers-color-scheme: dark) { .price-card h3 { color: #fff; } }
+      .price-amount { margin-top: 12px; font-family: "Poppins", sans-serif; font-weight: 800; font-size: 38px; color: var(--navy); line-height: 1; }
+      @media (prefers-color-scheme: dark) { .price-amount { color: var(--aqua); } }
+      .price-amount span { font-size: 17px; font-weight: 600; color: var(--muted); }
+      .price-card ul { list-style: none; margin: 18px 0 24px; padding: 0; display: grid; gap: 9px; }
+      .price-card ul li { font-size: 15.5px; line-height: 1.55; color: var(--muted); display: flex; gap: 10px; align-items: flex-start; }
+      .price-card ul li::before { content: ""; flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%; background: var(--teal); margin-top: 8px; }
+      .price-card .btn { margin-top: auto; }
+      .btn-navy { background: var(--navy); color: #fff; }
+      .btn-navy:hover { background: var(--deep-navy); }
+      /* Secondary hero button: white pill with brand-navy text — the navy
+         secondary identity, kept readable on the dark navy hero. Shares the
+         .btn base (min-height, padding, font, pill radius) so it pairs at
+         uniform dimensions with the coral primary CTA. */
+      .btn-secondary { background: #fff; color: var(--navy); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22); }
+      .btn-secondary:hover { background: var(--aqua); color: var(--deep-navy); }
+      .center-note { margin-top: 26px; text-align: center; font-family: "Poppins", sans-serif; font-weight: 600; font-size: 16px; color: var(--navy); }
+      @media (prefers-color-scheme: dark) { .center-note { color: var(--aqua); } }
+      .quote-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 36px; }
+      .quote-card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 26px 28px; box-shadow: 0 8px 22px rgba(18, 39, 94, 0.06); }
+      .quote-stars { color: var(--coral); font-size: 17px; letter-spacing: 3px; }
+      .quote-card p { margin-top: 12px; font-size: 16.5px; line-height: 1.65; color: var(--muted); }
+      .quote-who { margin-top: 14px; font-family: "Poppins", sans-serif; font-weight: 600; font-size: 14.5px; color: var(--ink); }
+      .town-list { list-style: none; margin: 22px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+      .town-list li {
+        background: var(--page); border: 1px solid var(--line); border-radius: 999px; padding: 7px 16px;
+        font-family: "Poppins", sans-serif; font-weight: 600; font-size: 14.5px; color: var(--navy);
+      }
+      @media (prefers-color-scheme: dark) { .town-list li { color: var(--aqua); } }
+      .town-list li a { color: inherit; text-decoration: none; }
+      @media (max-width: 1450px) and (min-width: 1021px) { .header-phone { display: none; } }
+      @media (max-width: 1180px) and (min-width: 1021px) { .brand img { height: 48px; } }
+      .steps-grid.three { grid-template-columns: repeat(3, 1fr); }
+      @media (max-width: 880px) {
+        .steps-grid.three { grid-template-columns: 1fr; }
+        .price-cards { grid-template-columns: 1fr; }
+        .quote-grid { grid-template-columns: 1fr; }
+        .hero-checks { grid-template-columns: 1fr; }
+      }
+
+      /* ---------- Best / Meet Nanny / FAQ components ---------- */
+      .feat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 36px; }
+      .feat-card {
+        background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+        padding: 26px 28px 28px; box-shadow: 0 8px 22px rgba(18, 39, 94, 0.06);
+      }
+      .feat-card h3 { font-size: 20px; font-weight: 700; color: var(--navy); }
+      @media (prefers-color-scheme: dark) { .feat-card h3 { color: #fff; } }
+      .feat-card p { margin-top: 10px; font-size: 16px; line-height: 1.65; color: var(--muted); }
+      .nanny-photo img.main { aspect-ratio: 4 / 5; }
+      .hero-lede a { color: var(--aqua); }
+      @media (max-width: 880px) { .feat-grid { grid-template-columns: 1fr; } }
+
+      /* ---------- Contact / Daisy's Dane / Terms components ---------- */
+      .contact-grid { display: grid; grid-template-columns: 1fr 1.3fr 1fr; gap: 20px; margin-top: 36px; }
+      .contact-card {
+        background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+        padding: 28px 26px 30px; box-shadow: 0 8px 22px rgba(18, 39, 94, 0.06);
+      }
+      .contact-card .cc-icon {
+        width: 46px; height: 46px; border-radius: 50%;
+        display: flex; align-items: center; justify-content: center;
+        background: var(--aqua-soft); color: var(--teal-dark);
+      }
+      @media (prefers-color-scheme: dark) { .contact-card .cc-icon { color: var(--aqua); } }
+      .contact-card h3 { margin-top: 16px; font-size: 15px; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; color: var(--muted); }
+      .contact-card .cc-big {
+        margin-top: 8px; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 24px; line-height: 1.3;
+        color: var(--navy); overflow-wrap: break-word;
+      }
+      @media (prefers-color-scheme: dark) { .contact-card .cc-big { color: #fff; } }
+      .contact-card .cc-big a { color: inherit; text-decoration: none; overflow-wrap: break-word; }
+      .contact-card .cc-big a:hover { text-decoration: underline; }
+      .contact-card p { margin-top: 8px; font-size: 15.5px; line-height: 1.6; color: var(--muted); }
+      @media (max-width: 880px) { .contact-grid { grid-template-columns: 1fr; } }
+
+      .dds-logo-wrap { display: flex; justify-content: center; }
+      .dds-logo-card {
+        background: #fff; border: 1px solid var(--line); border-radius: 20px;
+        box-shadow: var(--shadow); padding: 28px; width: min(380px, 100%);
+      }
+      .dds-logo-card img { width: 100%; height: auto; }
+      .buy-grid.five { max-width: 560px; }
+      .buy-grid.center { margin-left: auto; margin-right: auto; }
+
+      .hero-slim .hero-inner { grid-template-columns: 1fr; padding-top: 56px; padding-bottom: 72px; }
+      .hero-slim h1 { max-width: 20em; }
+      .terms-doc { max-width: 820px; }
+      .terms-doc h2 {
+        font-size: 26px; font-weight: 700; color: var(--navy); letter-spacing: -0.2px;
+        margin-top: 48px;
+      }
+      @media (prefers-color-scheme: dark) { .terms-doc h2 { color: #fff; } }
+      .terms-doc h2:first-child { margin-top: 0; }
+      .terms-doc h3 { font-size: 20px; font-weight: 700; color: var(--navy); margin-top: 36px; }
+      @media (prefers-color-scheme: dark) { .terms-doc h3 { color: #fff; } }
+      .terms-doc p { margin-top: 14px; font-size: 16.5px; line-height: 1.75; color: var(--muted); }
+      .terms-doc .doc-meta { margin-top: 0; font-size: 14.5px; line-height: 1.6; }
+      .terms-doc .doc-meta + h2 { margin-top: 14px; }
+      .terms-doc p strong, .terms-doc li strong { color: var(--ink); }
+      .terms-doc ol, .terms-doc ul { margin: 14px 0 0; padding-left: 26px; display: grid; gap: 10px; }
+      .terms-doc li { font-size: 16.5px; line-height: 1.7; color: var(--muted); }
+      .terms-doc li > ul, .terms-doc li > ol { margin-top: 10px; }
+      .terms-doc a { font-weight: 600; }
+      @media (max-width: 880px) {
+        .terms-doc h2 { font-size: 23px; margin-top: 38px; }
+        .terms-doc h3 { font-size: 18px; }
+      }
+
+      /* ---------- Privacy / Town Template / Commercial Template components ---------- */
+      .template-note {
+        display: flex; gap: 12px; align-items: flex-start;
+        background: var(--aqua-soft); border: 1px dashed var(--teal);
+        border-radius: 12px; padding: 16px 20px;
+      }
+      .template-note .tn-tag {
+        flex: 0 0 auto; background: var(--navy); color: #fff;
+        font-family: "Poppins", sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 0.6px;
+        padding: 4px 10px; border-radius: 999px; margin-top: 1px;
+      }
+      .template-note p { font-size: 15px; line-height: 1.6; color: var(--muted); }
+      .template-note p strong { color: var(--ink); }
+      .clean-list { list-style: none; margin: 22px 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px 28px; max-width: 68em; }
+      .clean-list li { display: flex; gap: 12px; align-items: flex-start; font-size: 16.5px; line-height: 1.6; color: var(--muted); }
+      .clean-list li::before {
+        content: ""; flex: 0 0 auto; width: 9px; height: 9px; border-radius: 50%;
+        background: var(--teal); margin-top: 9px;
+      }
+      .niche-list { list-style: none; margin: 22px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+      .niche-list a {
+        display: inline-flex; align-items: center; min-height: 40px; padding: 7px 16px;
+        background: var(--page); border: 1px solid var(--line); border-radius: 999px;
+        font-family: "Poppins", sans-serif; font-weight: 600; font-size: 14.5px; color: var(--navy);
+        text-decoration: none;
+      }
+      .niche-list a:hover { border-color: var(--teal); color: var(--teal-dark); }
+      .commercial-page .clean-list a { text-decoration: underline; text-underline-offset: 3px; }
+      @media (prefers-color-scheme: dark) { .niche-list a { color: var(--aqua); } }
+      .card-links { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+      .card-links a {
+        font-family: "Poppins", sans-serif; font-weight: 600; font-size: 15px;
+        color: var(--teal-dark); text-decoration: none;
+      }
+      .card-links a:hover { text-decoration: underline; text-underline-offset: 3px; }
+      @media (prefers-color-scheme: dark) { .card-links a { color: var(--aqua); } }
+      .review-note { margin-top: 14px; font-size: 14.5px; line-height: 1.6; color: var(--muted); font-style: italic; }
+      .reviews-source { display: inline-block; margin-top: 16px; padding: 5px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--card); font-family: "Poppins", sans-serif; font-weight: 600; font-size: 14px; color: var(--navy); }
+      @media (prefers-color-scheme: dark) { .reviews-source { color: var(--aqua); } }
+      .reviews-link { margin-top: 28px; text-align: center; font-family: "Poppins", sans-serif; font-weight: 600; font-size: 16px; }
+      .reviews-link a { color: var(--teal-dark); text-decoration: underline; }
+      @media (prefers-color-scheme: dark) { .reviews-link a { color: var(--aqua); } }
+      @media (max-width: 880px) { .clean-list { grid-template-columns: 1fr; } }
+
+      /* ---------- Responsive ---------- */
+      @media (max-width: 1020px) {
+        .main-nav { display: none; }
+        .header-phone { display: none; }
+        .menu-btn { display: inline-flex; }
+        .brand .brand-wide { display: none; }
+        .brand .brand-badge { display: block; width: 54px; height: 54px; }
+        .header-inner { gap: 12px; }
+        .btn-schedule { margin-left: 0; }
+        .mobile-nav {
+          display: none; border-top: 1px solid var(--line);
+          padding: 10px 24px 16px; background: var(--page);
+        }
+        .mobile-nav.open { display: block; }
+        .mobile-nav ul { list-style: none; margin: 0; padding: 0; display: grid; }
+        .mobile-nav a {
+          display: flex; align-items: center; min-height: 48px; padding: 8px 6px;
+          font-family: "Poppins", sans-serif; font-weight: 600; font-size: 16px;
+          color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line);
+        }
+        .mobile-nav li:last-child a { border-bottom: 0; }
+        .mobile-nav .m-phone { color: var(--navy); font-weight: 700; }
+        @media (prefers-color-scheme: dark) { .mobile-nav .m-phone { color: var(--aqua); } }
+      }
+      @media (min-width: 1021px) { .mobile-nav { display: none !important; } }
+
+      @media (max-width: 880px) {
+        .hero-inner { grid-template-columns: 1fr; gap: 38px; padding-top: 48px; padding-bottom: 56px; }
+        /* Mobile hero is one calm navy panel: no bubble/wave decoration, no logo artwork inside it */
+        .hero-bubbles { display: none; }
+        .hero-wave { display: none; }
+        .hero h1 { font-size: 36px; }
+        .hero-photo { max-width: none; width: 100%; }
+        .hero-photo img.main { aspect-ratio: auto; height: auto; }
+        .hero-photo .badge-chip { display: none !important; }
+        /* Gift-cards hero stack: headline, intro, photo, buy buttons, note */
+        #giftPage .hero-inner { display: flex; flex-direction: column; gap: 24px; }
+        #giftPage .hero-inner > div:first-child { display: contents; }
+        #giftPage .hero h1 { order: 1; }
+        #giftPage .hero-lede { order: 2; margin-top: 0; }
+        #giftPage .hero-photo { order: 3; }
+        #giftPage .buy-grid { order: 4; margin-top: 0; }
+        #giftPage .hero-note { order: 5; margin-top: 0; }
+        /* New pages hero stack: headline, intro, photo, buttons — no logo artwork inside */
+        #homePage .hero-inner, #pricingPage .hero-inner, #washPage .hero-inner, #bestPage .hero-inner, #nannyPage .hero-inner, #faqPage .hero-inner, #contactPage .hero-inner { display: flex; flex-direction: column; gap: 24px; }
+        #homePage .hero-inner > div:first-child, #pricingPage .hero-inner > div:first-child, #washPage .hero-inner > div:first-child, #bestPage .hero-inner > div:first-child, #nannyPage .hero-inner > div:first-child, #faqPage .hero-inner > div:first-child, #contactPage .hero-inner > div:first-child { display: contents; }
+        #homePage .hero h1, #pricingPage .hero h1, #washPage .hero h1, #bestPage .hero h1, #nannyPage .hero h1, #faqPage .hero h1, #contactPage .hero h1 { order: 1; }
+        #homePage .hero-lede, #pricingPage .hero-lede, #washPage .hero-lede, #bestPage .hero-lede, #nannyPage .hero-lede, #faqPage .hero-lede, #contactPage .hero-lede { order: 2; margin-top: 0; }
+        #homePage .hero-photo, #pricingPage .hero-photo, #washPage .hero-photo, #bestPage .hero-photo, #nannyPage .hero-photo, #faqPage .hero-photo, #contactPage .hero-photo { order: 3; }
+        #homePage .hero-actions, #pricingPage .hero-actions, #washPage .hero-actions, #bestPage .hero-actions, #nannyPage .hero-actions, #faqPage .hero-actions, #contactPage .hero-actions { order: 4; margin-top: 0; }
+        #homePage .hero-checks, #washPage .hero-note { order: 5; margin-top: 0; }
+        #homePage .app-note { order: 6; margin-top: 0; }
+        /* Town / Commercial hero stack: headline, intro, photo, buttons — no logo artwork inside */
+        .town-page .hero-photo .badge-chip, .commercial-page .hero-photo .badge-chip { display: none !important; }
+        .town-page .hero-inner, .commercial-page .hero-inner { display: flex; flex-direction: column; gap: 24px; }
+        .town-page .hero-inner > div:first-child, .commercial-page .hero-inner > div:first-child { display: contents; }
+        .town-page .hero h1, .commercial-page .hero h1 { order: 1; }
+        .town-page .hero-lede, .commercial-page .hero-lede { order: 2; margin-top: 0; }
+        .town-page .hero-photo, .commercial-page .hero-photo { order: 3; }
+        .town-page .hero-actions, .commercial-page .hero-actions { order: 4; margin-top: 0; }
+        .town-page .hero-note, .commercial-page .hero-note { order: 5; margin-top: 0; }
+        /* Daisy's Dane hero stack: headline, intro, photo, buy buttons, note — no logo artwork inside */
+        #ddsPage .hero-inner { display: flex; flex-direction: column; gap: 24px; }
+        #ddsPage .hero-inner > div:first-child { display: contents; }
+        #ddsPage .hero h1 { order: 1; }
+        #ddsPage .hero-lede { order: 2; margin-top: 0; }
+        #ddsPage .hero-sub { order: 3; margin-top: 0; }
+        #ddsPage .hero-photo { order: 4; }
+        #ddsPage .buy-grid { order: 5; margin-top: 0; }
+        #ddsPage .hero-note { order: 6; margin-top: 0; }
+        .intro-grid { grid-template-columns: 1fr; gap: 40px; }
+        .intro-grid .section-title { font-size: 30px; }
+        section.block { padding: 46px 0; }
+        .section-title { font-size: 27px; }
+        .footer-inner { grid-template-columns: 1fr; gap: 26px; padding-top: 40px; padding-bottom: 40px; }
+        .footer-brand { gap: 16px; }
+        .footer-badge { width: 84px; height: 84px; flex: 0 0 auto; }
+        .footer-nav { grid-template-columns: 1fr 1fr; gap: 4px 24px; max-width: none; }
+        .footer-links a { min-height: 44px; }
+      }
+      @media (max-width: 620px) {
+        .steps-grid { grid-template-columns: 1fr; }
+        .buy-grid { grid-template-columns: 1fr; max-width: none; }
+        /* Buy labels never wrap on mobile: one uniform smaller size and
+           tighter horizontal padding, sized so the longest label
+           ("Buy $250 Laundry Credit for DDS") fits one line at 360px. */
+        .buy-btn { white-space: nowrap; font-size: 14px; padding-left: 12px; padding-right: 12px; }
+        .btn-schedule { padding: 10px 16px; font-size: 14px; min-height: 44px; }
+        .terms-panel { padding: 22px 20px; }
+        .gift-card { left: 12px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        .btn { transition: none; }
+      }
+
+      /* ---------- Correction pass: layout-only refinements ---------- */
+      /* Gift / Daisy's Dane buy buttons: full-width stacked list inside the
+         pale panel at every width above the mobile breakpoint, so the
+         longest 17px label always fits on one line and the five-amount
+         Daisy's Dane grid ends in a clean full row. Navy fill and uniform
+         typography unchanged; the <=620px mobile treatment below in the
+         stylesheet (nowrap, uniform 14px) still applies on phones. */
+      #giftPage .buy-grid, #ddsPage .buy-grid { grid-template-columns: 1fr; }
+      @media (min-width: 621px) {
+        .buy-btn { white-space: nowrap; }
+      }
+      /* Homepage testimonial: the single Google review card centered at a
+         readable width, source pill and reviews link aligned beneath it. */
+      #homePage .quote-grid { grid-template-columns: minmax(0, 720px); justify-content: center; }
+      #homePage .reviews-source { display: block; width: fit-content; margin-left: auto; margin-right: auto; }
+      /* Why Nanny's: the odd last card spans the full row of the grid. */
+      #bestPage .feat-grid .feat-card:last-child { grid-column: 1 / -1; }
+      /* Long-prose pages: readable ~680-800px text measure (tables and card
+         grids keep the wider container). */
+      #faqPage .faq-list { max-width: 800px; }
+      #nannyPage .prose p, #bestPage .prose p, .commercial-page .prose p { max-width: 760px; }
+      #bestPage .dot-list, .commercial-page .dot-list { max-width: 760px; }
+      /* Utility pages (Pricing / FAQ / Contact only): less decorative hero
+         padding so the useful content arrives sooner. Homepage and Meet
+         Nanny heroes are untouched. */
+      #pricingPage .hero-inner, #faqPage .hero-inner, #contactPage .hero-inner { padding-top: 54px; padding-bottom: 78px; }
+      /* Contact email: 17px linked value on one line, never broken mid-word. */
+      .contact-card--email .cc-big { font-size: 17px; white-space: nowrap; }
+      .contact-card--email .cc-big a { white-space: nowrap; overflow-wrap: normal; }
+      /* Contact quick details: desktop keeps the card section; the strip is
+         a mobile-only element (see the <=880px block below). */
+      .contact-quick { display: none; }
+      /* Price Guide on-page jump links. */
+      .pg-jump { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 30px; }
+      .pg-jump a {
+        display: inline-flex; align-items: center; min-height: 40px; padding: 7px 16px;
+        background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+        font-family: "Poppins", sans-serif; font-weight: 600; font-size: 14.5px; color: var(--navy);
+        text-decoration: none;
+      }
+      .pg-jump a:hover { border-color: var(--teal); color: var(--teal-dark); }
+      @media (prefers-color-scheme: dark) { .pg-jump a { color: var(--aqua); } }
+      #pg-prices, #pg-examples, #pg-competitors, #pg-faq { scroll-margin-top: 96px; }
+      @media (max-width: 880px) {
+        #pricingPage .hero-inner, #faqPage .hero-inner, #contactPage .hero-inner { padding-top: 34px; padding-bottom: 42px; }
+        /* Utility hero photos stop being screen-tall on mobile, so Pricing
+           rate cards and FAQ questions arrive much sooner. */
+        #pricingPage .hero-photo img.main, #faqPage .hero-photo img.main, #contactPage .hero-photo img.main {
+          aspect-ratio: 16 / 9; height: auto; object-fit: cover;
+        }
+        /* Contact: phone / email / hours sit immediately below the title
+           and intro, before the large couple photo. */
+        #contactPage .contact-quick {
+          display: grid; gap: 8px; order: 3;
+          font-family: "Poppins", sans-serif; font-weight: 600; font-size: 17px; line-height: 1.45;
+        }
+        #contactPage .contact-quick a { color: #fff; text-decoration: none; white-space: nowrap; }
+        #contactPage .contact-quick a:hover { text-decoration: underline; }
+        #contactPage .contact-quick span { color: var(--aqua); white-space: nowrap; }
+        #contactPage .hero-photo { order: 4; }
+        #contactPage .hero-actions { order: 5; }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ================= Header ================= -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/nannys-laundry-preview/" aria-label="Nanny's Laundry — home">
+          <img class="brand-wide" src="/nannys-laundry-preview/assets/logo-nl3-wide.png" alt="Nanny's Laundry — Turning Piles into Smiles" />
+          <img class="brand-badge" src="/nannys-laundry-preview/assets/logo-newnlogo3.png" alt="" aria-hidden="true" />
+        </a>
+        <nav class="main-nav" aria-label="Main">
+          <ul>
+            <li><a href="/nannys-laundry-preview/">Home</a></li>
+            <li><a href="/nannys-laundry-preview/pricing">Pricing</a></li>
+            <li><a href="/nannys-laundry-preview/wash-and-fold-laundry-service-kansas-city">Wash &amp; Fold</a></li>
+            
+            <li><a href="/nannys-laundry-preview/gift-cards">Gift Cards</a></li>
+            <li><a href="/nannys-laundry-preview/meet-nanny">Meet Nanny</a></li>
+            <li><a href="/nannys-laundry-preview/faq-s">FAQ</a></li>
+            <li><a href="/nannys-laundry-preview/contact-us">Contact</a></li>
+            <li><a href="/nannys-laundry-preview/dds-gift-cards">Daisy's Dane Gift Cards</a></li>
+          </ul>
+        </nav>
+        <a class="header-phone" href="tel:+18168374300">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z" fill="currentColor"/></svg>
+          (816) 837-4300
+        </a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+        </button>
+        <a class="btn btn-coral btn-schedule" href="https://app.trycents.com/new-order/YjJ5/home">Schedule Pickup</a>
+      </div>
+      <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+        <ul>
+          <li><a href="/nannys-laundry-preview/">Home</a></li>
+          <li><a href="/nannys-laundry-preview/pricing">Pricing</a></li>
+          <li><a href="/nannys-laundry-preview/wash-and-fold-laundry-service-kansas-city">Wash &amp; Fold</a></li>
+          
+          <li><a href="/nannys-laundry-preview/gift-cards">Gift Cards</a></li>
+          <li><a href="/nannys-laundry-preview/meet-nanny">Meet Nanny</a></li>
+          <li><a href="/nannys-laundry-preview/faq-s">FAQ</a></li>
+          <li><a href="/nannys-laundry-preview/contact-us">Contact</a></li>
+          <li><a href="/nannys-laundry-preview/dds-gift-cards">Daisy's Dane Gift Cards</a></li>
+          <li><a class="m-phone" href="tel:+18168374300">(816) 837-4300</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="hospitalityPage" class="commercial-page">
+      <section class="hero">
+        <svg class="hero-bubbles" width="100%" height="100%" preserveAspectRatio="none" aria-hidden="true">
+          <circle cx="6%" cy="18%" r="26" fill="#2FA8C4" opacity="0.35"/>
+          <circle cx="11%" cy="30%" r="12" fill="#A9DEEE" opacity="0.4"/>
+          <circle cx="46%" cy="10%" r="16" fill="#2FA8C4" opacity="0.3"/>
+          <circle cx="52%" cy="86%" r="30" fill="#2FA8C4" opacity="0.22"/>
+          <circle cx="97%" cy="14%" r="20" fill="#A9DEEE" opacity="0.3"/>
+          <circle cx="3%" cy="78%" r="14" fill="#A9DEEE" opacity="0.28"/>
+        </svg>
+        <div class="container hero-inner">
+          <div>
+            <h1>Hospitality Laundry Service <span class="accent">Kansas City</span></h1>
+            <p class="hero-lede">Hospitality businesses in Kansas City depend on fresh towels, clean sheets, and ready-to-use linens every day. Whether you manage a hotel, Airbnb, vacation rental, or guest property, keeping up with laundry can take valuable time away from guests and daily operations.</p>
+            <p class="hero-note">Nanny's Laundry provides reliable pickup and delivery laundry service for hospitality businesses across Kansas City. We help keep your linens clean, folded, and ready for every guest stay.</p>
+            <div class="hero-actions">
+              <a class="btn btn-coral" href="/nannys-laundry-preview/contact-us">Request a Custom Quote</a>
+            </div>
+          </div>
+          <div class="hero-photo pg-photo">
+            <img class="main" src="/nannys-laundry-preview/assets/photo-hand-towels-blue.jpg" alt="Hands holding a stack of neatly folded blue and white towels" />
+            <div class="badge-chip"><img src="/nannys-laundry-preview/assets/logo-newnlogo3.png" alt="" /></div>
+          </div>
+        </div>
+        <svg class="hero-wave" viewBox="0 0 1440 74" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0,40 C240,80 480,0 720,26 C960,52 1200,74 1440,34 L1440,74 L0,74 Z" fill="#2FA8C4" opacity="0.55"/>
+          <path d="M0,56 C260,90 520,26 780,44 C1040,62 1240,84 1440,54 L1440,74 L0,74 Z" style="fill:var(--page)"/>
+        </svg>
+      </section>
+
+      <!-- What We Wash -->
+      <section class="block">
+        <div class="container">
+          <h2 class="section-title">What We Wash</h2>
+          <ul class="clean-list">
+            <li><span>Bed sheets</span></li>
+            <li><span>Pillowcases</span></li>
+            <li><span>Bath towels</span></li>
+            <li><span>Hand towels</span></li>
+            <li><span>Washcloths</span></li>
+            <li><span>Kitchen towels</span></li>
+            <li><span>Comforter covers</span></li>
+            <li><span>General guest linens</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Why hospitality businesses choose Nanny's -->
+      <section class="block tint">
+        <div class="container">
+          <h2 class="section-title">Why Kansas City Hospitality Businesses Choose Nanny's Laundry</h2>
+          <ul class="dot-list">
+            <li><span>Convenient pickup and delivery</span></li>
+            <li><span>Clean, neatly folded linens returned ready to use</span></li>
+            <li><span>Reliable recurring service available</span></li>
+            <li><span>Fast turnaround options</span></li>
+            <li><span>Save staff time and reduce laundry workload</span></li>
+            <li><span>Friendly local service you can count on</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Perfect For -->
+      <section class="block">
+        <div class="container">
+          <h2 class="section-title">Perfect For</h2>
+          <ul class="clean-list">
+            <li><span><a href="/nannys-laundry-preview/hotel-laundry-service-kansas-city">Hotels</a></span></li>
+            <li><span>Motels</span></li>
+            <li><span><a href="/nannys-laundry-preview/short-term-rental-laundry-service-kansas-city">Airbnb hosts</a></span></li>
+            <li><span>Vacation rentals</span></li>
+            <li><span>VRBO properties</span></li>
+            <li><span>Property managers</span></li>
+            <li><span>Guest houses</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Serving area -->
+      <section class="block tint">
+        <div class="container">
+          <h2 class="section-title">Serving Kansas City and Nearby Areas</h2>
+          <div class="prose" style="margin-top: 18px;">
+            <p>We proudly serve Kansas City, MO and surrounding communities including Brookside, Waldo, North Kansas City, Prairie Village, Leawood, Lee's Summit, and Overland Park.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Closing CTA -->
+      <section class="block">
+        <div class="container">
+          <h2 class="section-title">Let Us Handle the Laundry</h2>
+          <div class="prose" style="margin-top: 18px;">
+            <p>Fresh linens are an important part of every guest experience. Let Nanny's Laundry keep your hospitality laundry clean, organized, and ready for every turnover.</p>
+            <p>Contact us today to schedule pickup or request a custom quote.</p>
+          </div>
+          <div class="book-actions">
+            <a class="btn btn-coral" href="/nannys-laundry-preview/contact-us">Request a Custom Quote</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="block tint" style="padding-top: 8px;">
+        <div class="container">
+          <h2 class="section-title" style="padding-top: 56px;">Frequently Asked Questions</h2>
+          <div class="faq-list">
+            <div class="faq-item">
+              <h3><span class="q-dot"></span>Do you offer recurring pickup service?</h3>
+              <p>Yes. Weekly and custom recurring pickup schedules may be available.</p>
+            </div>
+            <div class="faq-item">
+              <h3><span class="q-dot"></span>How fast is turnaround?</h3>
+              <p>Turnaround times depend on scheduling and order size. Contact us for current availability.</p>
+            </div>
+            <div class="faq-item">
+              <h3><span class="q-dot"></span>Can laundry be separated by property?</h3>
+              <p>Yes. We can discuss labeling and sorting preferences during setup.</p>
+            </div>
+            <div class="faq-item">
+              <h3><span class="q-dot"></span>Do you work with single Airbnb units?</h3>
+              <p>Absolutely. We work with both single-unit hosts and larger property managers.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <div class="footer-badge"><img src="/nannys-laundry-preview/assets/logo-newnlogo3.png" alt="Nanny's Laundry round logo badge" /></div>
+          <div>
+            <div class="footer-name">Nanny's Laundry Pickup &amp; Delivery</div>
+            <div class="footer-contact">
+              <span>Phone: <a href="tel:+18168374300">(816) 837-4300</a></span>
+              <span>Email: <a href="mailto:info@nannyslaundry.com">info@nannyslaundry.com</a></span>
+              <span>Open 8 AM–7 PM, 7 days a week</span>
+            </div>
+          </div>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <ul class="footer-links">
+            <li><a href="/nannys-laundry-preview/">Home</a></li>
+            <li><a href="/nannys-laundry-preview/pricing">Pricing</a></li>
+            <li><a href="/nannys-laundry-preview/wash-and-fold-laundry-service-kansas-city">Wash &amp; Fold</a></li>
+            
+            <li><a href="/nannys-laundry-preview/gift-cards">Gift Cards</a></li>
+            <li><a href="/nannys-laundry-preview/meet-nanny">Meet Nanny</a></li>
+          </ul>
+          <ul class="footer-links">
+            <li><a href="/nannys-laundry-preview/faq-s">FAQ</a></li>
+            <li><a href="/nannys-laundry-preview/contact-us">Contact</a></li>
+            <li><a href="/nannys-laundry-preview/best-laundry-service-kansas-city">Why Nanny's</a></li>
+            <li><a href="/nannys-laundry-preview/dds-gift-cards">Daisy's Dane Gift Cards</a></li>
+            <li><a href="/nannys-laundry-preview/laundry-terms-of-service">Terms</a></li>
+            <li><a href="/nannys-laundry-preview/privacy-policy">Privacy</a></li>
+            <li><a href="/nannys-laundry-preview/commercial-laundry-service-kansas-city">Commercial Laundry Services</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      (function () {
+        var btn = document.getElementById('menuBtn');
+        var nav = document.getElementById('mobileNav');
+        if (btn && nav) {
+          btn.addEventListener('click', function () {
+            var open = nav.classList.toggle('open');
+            btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+            btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
